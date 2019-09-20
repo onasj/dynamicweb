@@ -1,0 +1,51 @@
+import React from 'react'; //always import reactg first
+
+function testingReact({
+   articleData = {}
+}){
+    return (
+        <div>
+            <h2>{articleData.title}</h2>
+            <p>{articleData.text}</p>
+        </div>
+    );
+}
+
+const sampleData = [
+    {
+        text: '',
+        title: ''
+    },
+    {
+        text: '',
+        title: ''
+    },
+    {
+        text: '',
+        title: ''
+    },
+]
+
+return (
+    <div>
+        {sampleData.map((article, i) => (
+            TestingReact key={i} articleData={article} />
+         ))}
+    </div>
+)
+
+
+export default function testingContainer(props){
+    let city = 'NYC';
+    let county = 'Kings';
+    let me = 'James';
+    return(
+        <div>
+            <TestingReact place={city} county={county} person={me} />
+        </div>
+    )
+}
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import './App.css';
+import articleData from '.component/articleData';
+import Article from '.containers/Article';

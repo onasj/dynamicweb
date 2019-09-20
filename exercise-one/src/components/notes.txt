@@ -1,0 +1,60 @@
+notes 9/17/2019
+
+json
+
+-object format in javascript it is strict
+json is wrapped in an array
+[
+    {
+        "key":"value",
+        "item":[
+            "item1", "item2"
+        ]
+        "key2":[{
+            "key": "value"
+        },
+        {
+            "key": "value"
+        }]
+    }
+]
+
+//json validator
+
+Adding element as style in React
+
+import React from 'react';
+
+const article = {
+    "img": {
+        "url": "httpsadasdasdas",
+        "alt": "A placeholder image"
+    }
+}
+
+cont coolString = `Words ${article.image.url}`
+
+export default function inlinestyle() {
+    return (
+        <div style={
+            {
+                backgroundImgae: `url("{article.image.url}")`
+                backgroundImage: `url("https:asdasdasdasd")`,
+                margin: "10px",
+                paddingTop: "10px
+            }
+        }>
+            {text(variable)}
+        </div>
+    );
+}
+
+string literals
+
+Getting data for Article Page
+
+const [stateVal, setStateVal] = useState('');
+
+useEffect(() => {
+    console.log('yes);
+}, [])
