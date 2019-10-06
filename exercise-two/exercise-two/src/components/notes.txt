@@ -33,3 +33,123 @@ return (
 	</div>
 
 );
+
+//-- http://coolurl.com/page-one?
+paramone=asdasdas
+paramtwo-sadsdddssds
+
+export defauly function Home() {
+	cont urlParams = props.location.search;
+
+	return(
+		<div>
+
+		</div>
+	)
+}
+
+useEffect(() =>{
+	const urlParams = new URLSearchParams(props.location.search)
+	const cityParam = urlParams.get('city') ? urlParams.get('city') : 'London';
+	setCity(cityParam);
+
+	const query = 'https://api.openweathermap.ord'
+	axios.get(query).then(response => apiCallback(response));
+}, []);
+
+useEffect(() => {	
+} [weather])
+
+css
+
+body {
+	box-sizing
+}
+
+
+flexbox {
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+	justify-content: flex-end;
+	width: 100%;
+	margin: 20px auto;
+	max-width: 1000px;
+}
+
+.WeatherNav_Item {
+	color: black
+	font-size: 20px;
+	margin: 0 20px;
+	padding: 10px;
+}
+
+.WeatherNac_Item--active {
+	background-color: yellow;
+	color: red;
+}
+
+className={`WeatherNav_Item ${city === 'Seoul ? 'WeatherNav'_Item--active' : ''}`}
+
+components
+weathericon.js
+
+import {fontAwsomeIcon} from '@fontawesome/react-fontawesome';
+import {faCloudRain, faCloud, faSun, faWind} from 'asdasdasdasd'
+
+export default function WeatherIcon({weatherType}) {
+	console.log('weatherType', weatherType)
+	let icon;
+	switch(weatherType) {
+		case: 'Rain'
+			return ( 
+				<FontAwesomeIcon 
+					icon={faCloudRain}
+				/>
+			);
+		case: 'Cloudy'
+			return <FontAwesomeIcon icon={faCloud}/>
+		case: 'Snow'
+			return <FontAwesomeIcon icon={faCloudSnow}/>
+		default:
+			return <div></div>
+	}
+
+
+useEddect(() => {
+	let getWeatherType = weather.weather ? weather.weather[0].main : '';
+	let getCloudy = weather.clouds ? weather.clouds.all : 0;
+	setWeatherType(getWeatherType)
+	setCloudy(getCloudy)
+}, [weather])
+
+components
+PageWrapper.js
+
+import React from 'react';
+
+export default unction pagewarapper: ({cloudy, children}) {
+	const wrapperOpcacity: Cloudy ? (cloudy * 0.01) : 0;
+
+	return(
+		<div style={{
+			height:'100%',
+			width: '100%',
+			minHeuight: '100vh',
+			minWidth: '100vw',
+			backgroundColor: `rgba(000,${wrapperOpacitty})`
+		}}>
+			{children}
+		</div>
+
+	)
+
+}
+
+const redvalue: ((cloudy+1)/100)*255;
+
+backgroundColor: `rgba({redvalue,bluevalue,greenvalue});
+
+const query = `https://api.openweathermap.org/data/2.5/weather?q=${cityParam}&APPID=${apiKey}`
+			axios.get(query).then(response => apiCallback(response));
+
