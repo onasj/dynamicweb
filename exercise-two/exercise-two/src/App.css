@@ -20,3 +20,20 @@
 .App-link {
   color: #09d3ac;
 }
+
+.Locations {
+  color: black;
+  font-size: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+.Page {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin: 10px auto;
+  max-width: 1000px;
+}

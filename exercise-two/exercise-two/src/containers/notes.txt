@@ -116,7 +116,7 @@ export default function WeatherIcon({weatherType}) {
 	}
 
 
-useEddect(() => {
+useEffect(() => {
 	let getWeatherType = weather.weather ? weather.weather[0].main : '';
 	let getCloudy = weather.clouds ? weather.clouds.all : 0;
 	setWeatherType(getWeatherType)
@@ -128,7 +128,7 @@ PageWrapper.js
 
 import React from 'react';
 
-export default unction pagewarapper: ({cloudy, children}) {
+export default function pageWrapper: ({cloudy, children}) {
 	const wrapperOpcacity: Cloudy ? (cloudy * 0.01) : 0;
 
 	return(
@@ -152,4 +152,8 @@ backgroundColor: `rgba({redvalue,bluevalue,greenvalue});
 
 const query = `https://api.openweathermap.org/data/2.5/weather?q=${cityParam}&APPID=${apiKey}`
 			axios.get(query).then(response => apiCallback(response));
+
+
+				// <div>{pageWrapper({Cloudy,children})}</div>
+				// import pageWrapper from '..//components/pagewrapper.js';
 
