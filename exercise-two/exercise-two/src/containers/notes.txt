@@ -157,3 +157,81 @@ const query = `https://api.openweathermap.org/data/2.5/weather?q=${cityParam}&AP
 				// <div>{pageWrapper({Cloudy,children})}</div>
 				// import pageWrapper from '..//components/pagewrapper.js';
 
+
+const [error,isError] = useState(false);
+const [errorMessage, setErrorMessage] = useState('');
+const [sucess, isSucess] = useState(True);
+
+function apiCallback(response) {
+	console.log('response', response);
+	if(response,status !== 200) {
+		isError(true);
+		setErrorMessage(`${response.state}: ${'Error'}`);
+	} else {
+		isSucess(true);
+	}
+	setWeather(response,data)
+}
+
+return (
+
+	<div>
+	{error && <div className="errorMessage">{errorMessage}</div>}
+
+)
+
+
+Flexbox
+CSS Grid
+Floats
+
+Margin
+Padding
+
+//ANimation
+transition
+keyframes
+
+className={
+	`city ${'cityName'}`
+	`city ${city === London ? 'city_london'}`
+}
+
+.sucessMessage {
+	background-color: rgba(179,255,191);
+	border: 2px solig green;
+	border-radius: 5px;
+	display: block;
+	padding: 20px 5px;
+	position: relative;
+	margin: 20px 0;
+	text-align: center;
+	top: 0;
+	transition: background-color 500ms ease, top 200ms ease;
+}
+
+.sucessMessage:hover {
+	background-color: rgba(179, 255, 191, 0.1);
+	top: 5px;
+}
+
+git branch
+git checkout -b readings/week-seven
+git branch
+
+git add.
+git commit -m "sadsadasd"
+
+git checkout --no-track -b week-eight origin/mast
+
+const [tempType, setTempType] = useState('');
+
+<div>
+	<p>{tempType}</p>
+	<div>
+		<p onClick={()=> setTemptType('C')} 
+		className={`TemperatureType ${tempType === 'C' ? 'TemperatureType__Active': ''}`}
+		>Set to C</p>
+	</div>
+</div>
+

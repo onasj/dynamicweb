@@ -56,15 +56,17 @@ import WeatherIcon from '..//components/weathericon.js';
 				<a className="Locations" href='?q=London'>London</a>
 				<a className="Locations" href='?q=California'>California</a>
 				<a className="Locations" href='?q=Belgium'>Belgium</a>
-				<h1>Weather in {city}</h1>
-				<div>{WeatherIcon({weatherType})}</div>
-				<p>Weather: {weather.weather ? weather.weather[0].main : ''} </p>
-				<p>Current Temperature: {weather.main && weather.main.temp} </p>
-				<p>Max Temperature: {weather.main && weather.main.temp_max} </p>
-				<p>Min Temperature: {weather.main && weather.main.temp_min} </p>
-				<p>Humidity: {weather.main && weather.main.humidity} </p>
-				<p>Cloudiness: {weather.clouds && weather.clouds.all} </p>
-				<p>Wind Speed: {weather.wind && weather.wind.speed} </p>
+				<div className="Ugly">
+					<h1>Weather in {city}</h1>
+					<div>{WeatherIcon({weatherType})}</div>
+					<p>Weather: {weather.weather ? weather.weather[0].main : ''} </p>
+					<p>Current Temperature: {weather.main && weather.main.temp} </p>
+					<p>Max Temperature: {weather.main && weather.main.temp_max} </p>
+					<p>Min Temperature: {weather.main && weather.main.temp_min} </p>
+					<p>Humidity: {weather.main && weather.main.humidity} </p>
+					<p>Cloudiness: {weather.clouds && weather.clouds.all} </p>
+					<p>Wind Speed: {weather.wind && weather.wind.speed} </p>
+				</div>
 			</div>
 		);
 	}

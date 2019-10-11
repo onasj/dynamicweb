@@ -22,10 +22,14 @@
 }
 
 .Locations {
-  color: black;
+  color: grey;
   font-size: 15px;
   margin: 5px;
   padding: 5px;
+  border: dashed grey;
+  width: 200px;
+  align-self: center;
+  background-color: lightgrey;
 }
 
 
@@ -35,5 +39,15 @@
   align-content: center;
   width: 100%;
   margin: 10px auto;
-  max-width: 1000px;
+  max-width: 960px;
+}
+
+.Ugly {
+  align-self: center;
+  background-color: lightgrey;
+  border: dashed grey;
+  width: 400px;
+  margin: 10px;
+  height: 400px;
+  color: grey;
 }
