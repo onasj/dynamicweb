@@ -1,22 +1,86 @@
-.App {
-  text-align: center;
+body {
+  background-color: beige;
 }
 
-.App-logo {
-  height: 40vmin;
+.skel {
+  font-family: calibri;
+  width: 50%;
+  border: 15px dashed #85bb65;
+  padding: 10px;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.links {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  background-color: #85bb65;
+  padding: 15px;
+  text-decoration: none;
+  color: beige;
+}
+
+a:hover {
+  background-color: #a1cb88;
+}
+
+.top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 5px;
+  font-family: Verdana;
+  font-weight: bold;
+  color: grey;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #09d3ac;
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-family: Verdana;
+  color: beige;
+  font-weight: bold lighter;
+  font-size: 18px;
+  border: solid #85bb65;
+}
+
+.both {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-family: Verdana;
+  color: grey;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  border: dashed #85bb65;
+}
+
+.botc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-family: Verdana;
+  color: beige;
+  font-weight: normal lighter;
+  font-size: 13px;
+  background-color: #65bb70;
+  padding: 10px;
+}
+
+.botc:hover {
+  background-color: #85bb65;
 }
